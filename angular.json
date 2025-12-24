@@ -13,6 +13,22 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/rohini-portfolio",
+            "baseHref": "/angular-portfolio/",
+            "deployUrl": "/angular-portfolio/",
+
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "2mb",
+                "maximumError": "3mb"
+              },
+              {
+                "type": "anyComponentStyle",
+                "maximumWarning": "10kb",
+                "maximumError": "20kb"
+              }
+            ],
+
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,7 +46,6 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css",
               "src/assets/template/css/open-iconic-bootstrap.min.css",
-              
               "src/assets/template/css/owl.theme.default.min.css",
               "src/assets/template/css/magnific-popup.css",
               "src/assets/template/css/aos.css",
@@ -47,23 +62,12 @@
               "src/assets/template/js/aos.js",
               "src/assets/template/js/scrollax.min.js",
               "src/assets/template/js/jquery.animateNumber.min.js",
-              "src/assets/template/js/main.js"
+              "src/assets/template/js/main.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
-                }
-              ],
               "outputHashing": "all"
             },
             "development": {

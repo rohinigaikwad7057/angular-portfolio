@@ -13,4 +13,11 @@
 .no-wrap {
   white-space: nowrap;
 }
+@media (max-width: 768px) {
+  .no-wrap {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+  }
+}
 

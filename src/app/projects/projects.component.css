@@ -28,3 +28,6 @@
 .text-yellow-400 {
   color: #f5c842 !important;
 }
+.project-card {
+  height: 100%;
+}
