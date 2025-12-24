@@ -1,0 +1,53 @@
+.contact-wrapper {
+  background: #000;
+  color: #fff;
+  padding: 120px 0;
+}
+
+.title-big {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #cfcfcf;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item h5 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact-item p {
+  margin-top: 8px;
+  color: #cfcfcf;
+  font-size: 15px;
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  background: #1d1d1d;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #f9c74f;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}

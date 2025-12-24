@@ -1,0 +1,30 @@
+.project-card {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+}
+.project-card ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+.project-card li {
+  margin-bottom: 6px;
+  color: #d1d1d1;
+}
+.title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.tech {
+  font-size: 14px;
+  color: #cccccc;
+}
+.text-yellow-400 {
+  color: #f5c842 !important;
+}

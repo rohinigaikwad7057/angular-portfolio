@@ -1,0 +1,26 @@
+<!-- Floating Icon -->
+<div class="chatbot-fab" (click)="toggleChat()" *ngIf="!isOpen">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- Chat Window -->
+<div class="ai-chat-popup" *ngIf="isOpen">
+  <div class="chat-header">
+    <span>AI Assistant</span>
+    <i class="fas fa-times close-icon" (click)="toggleChat()"></i>
+  </div>
+
+  <div class="chat-window">
+    <div *ngFor="let msg of messages" class="chat-row">
+      <div class="user-msg">{{ msg.user }}</div>
+      <div *ngIf="msg.bot" class="bot-msg">
+        <i class="fas fa-robot ai-icon"></i> {{ msg.bot }}
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input [(ngModel)]="inputMessage" placeholder="Ask about resume, skills, projects..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>

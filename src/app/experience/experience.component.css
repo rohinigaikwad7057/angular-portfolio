@@ -1,0 +1,75 @@
+/* Center the experience content */
+.experience-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Align text slightly to the right with left vertical border */
+.experience-item {
+  padding-left: 30px;
+  border-left: 2px solid #ffdd00;
+  margin-bottom: 25px;
+}
+
+/* Yellow Job title */
+.title {
+  color: #ffdd00;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.date{
+    color: #ffdd00;
+}
+
+/* Subtitle & points */
+.position {
+  font-size: 17px;
+  color: #eaeaea;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+ul li {
+  color: #dcdcdc;
+  margin-top: 8px;
+}
+/* Education Card Styling */
+/* .resume-wrap {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 2px solid #ffdd00;
+} */
+
+/* Highlighted Year (Bigger + Yellow) */
+.resume-wrap .date {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffdd00;
+}
+
+/* Degree Title Styling */
+.resume-wrap h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* Institute Text */
+.resume-wrap .position {
+  font-size: 16px;
+  color: #cccccc;
+  font-weight: 500;
+}
+
+/* Grade Text */
+.resume-wrap p {
+  color: #e0e0e0;
+  margin-top: 8px;
+}
+

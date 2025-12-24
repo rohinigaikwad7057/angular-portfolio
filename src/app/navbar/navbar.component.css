@@ -1,0 +1,46 @@
+/* Smooth hover underline effect */
+.nav-link {
+  position: relative;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+.active-link .nav-link {
+  color: #ffc107 !important;
+}
+
+.active-link .nav-link::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  bottom: -4px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Show underline on hover */
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Navbar must allow underline visibility */
+#ftco-navbar {
+  background: #000 !important;
+  overflow: visible !important;
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}

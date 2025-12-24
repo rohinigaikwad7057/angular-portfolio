@@ -1,0 +1,93 @@
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row d-flex align-items-stretch">
+
+      <!-- Left Image + Personal Info -->
+      <div class="col-md-6 col-lg-5 d-flex">
+        <div class="img-about img d-flex align-items-stretch">
+          <div class="overlay">
+
+            <div class="row" style="padding-top: 6rem;">
+              <div class="col-sm-6 col-md-5">
+                <div class="about-img">
+                  <img src="../../assets/template/images/profile-pic.png" class="img-fluid rounded b-shadow-a" alt="Profile">
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-7">
+                <div class="about-info">
+                  <p><span class="title-s mr-3">Name: </span> <span>Rohini R. Gaikwad</span></p>
+                  <p><span class="title-s mr-3">Job Role: </span> <span>Frontend Developer</span></p>
+                  <p><span class="title-s mr-3">Experience: </span> <span>3 Year 7 months</span></p>
+                  <p><span class="title-s mr-3">Address: </span> <span>Abu Dhabi, UAE</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill Progress Bars -->
+<section class="container mt-5">
+  <!-- <h2 class="text-center mb-4">Skills</h2> -->
+
+  <div class="row">
+    <div class="col-md-6" *ngFor="let group of skills | keyvalue">
+
+      <h4 class="category-title">{{ group.key | titlecase }} Skills</h4>
+
+      <div *ngFor="let skill of group.value" class="skill-item mb-4">
+        <div class="d-flex justify-content-between">
+          <span class="skill-name">{{ skill.name }}</span>
+          <span class="skill-value">{{ skill.value }}%</span>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar"
+            [style.width.%]="skill.value"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="col-md-6 col-lg-7 ps-lg-5 pb-5">
+        <div class="heading-section">
+          <h1 class="big">About</h1>
+          <h2 class="mb-4">About Me</h2>
+
+          <p>
+            I am a passionate Frontend Developer with strong experience in Angular, creating clean UI, 
+            responsive websites and user-friendly applications.  
+            My goal is to build pixel-perfect, high-performance websites.
+          </p>
+
+          <ul class="about-info mt-4">
+            <li class="d-flex"><span>Profile:</span> <span>Frontend Development</span></li>
+            <li class="d-flex"><span>Domain:</span> <span>Web Development</span></li>
+            <li class="d-flex"><span>Education:</span> <span>IT / Computer Science</span></li>
+            <li class="d-flex"><span>Language:</span> <span>English, Marathi, Hindi</span></li>
+            <li class="d-flex"><span>Tools:</span> <span>VS Code, Git, NPM</span></li>
+            <li class="d-flex"><span>Interest:</span> <span>Traveling, Learning, Designing</span></li>
+          </ul>
+        </div>
+
+        <!-- <div class="counter-wrap d-flex mt-4">
+          <div class="text">
+            <p class="mb-4">
+              <span class="number">5</span> <span>+</span>
+              <span>&nbsp; Projects Completed</span>
+            </p>
+            <p><a href="https://www.linkedin.com" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+          </div>
+        </div> -->
+
+      </div>
+
+    </div>
+  </div>
+</section>

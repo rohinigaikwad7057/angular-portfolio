@@ -1,0 +1,16 @@
+.hero,
+.slider-item,
+.js-fullheight {
+  height: 100vh !important;
+  min-height: 600px;
+  position: relative;
+}
+.one-third.img {
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+
